@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    render text: "https://crud-message-app.herokuapp.com/microposts"
   end
 
   # GET /users/1
